@@ -2,26 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.katliwap</groupId>
-  <artifactId>netfloristwebsite</artifactId>
+  <artifactId>netfloristbackend</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>netfloristwebsite Maven Webapp</name>
+  <name>netfloristbackend Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  
-  <properties>
-  <javaee.version>8.0</javaee.version>
-  </properties>
-  
   <dependencies>
-  
-  <!-- JAVA EE API -->
-  <dependency>
-    <groupId>javax</groupId>
-    <artifactId>javaee-api</artifactId>
-    <version>${javaee.version}</version>
-    <scope>provided</scope>
-</dependency>
-
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -30,6 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>netfloristwebsite</finalName>
+    <finalName>netfloristbackend</finalName>
   </build>
 </project>
