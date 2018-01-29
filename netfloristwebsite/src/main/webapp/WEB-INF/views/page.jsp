@@ -32,7 +32,7 @@
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootstrap readable theme -->
-<!--  --><link href="${css}/bootstraptheam.css" rel="stylesheet"> -->
+<!--<link href="${css}/bootstraptheam.css" rel="stylesheet"> -->
 
 <!-- Custom CSS -->
 <link href="${css}/shop-homepage.css" rel="stylesheet">

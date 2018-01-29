@@ -15,6 +15,13 @@
 
 	<dependencies>
 
+		<!-- Links netflorist backend with front end -->
+		<dependency>
+			<groupId>com.katliwap</groupId>
+			<artifactId>netfloristbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<!-- JAVA EE API -->
 		<dependency>
 			<groupId>javax</groupId>
@@ -61,4 +68,4 @@
 		<finalName>netfloristwebsite</finalName>
 	</build>
 </project>
-<!--  -->
+<!-- -->
