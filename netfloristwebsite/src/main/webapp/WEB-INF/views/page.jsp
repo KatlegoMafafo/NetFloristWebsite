@@ -25,11 +25,14 @@
 <title>NetFlorist - ${title}</title>
 
 <script>
-window.menu = '${title}';
+	window.menu = '${title}';
 </script>
 
 <!-- Bootstrap Core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap readable theme -->
+<!--  --><link href="${css}/bootstraptheam.css" rel="stylesheet"> -->
 
 <!-- Custom CSS -->
 <link href="${css}/shop-homepage.css" rel="stylesheet">
@@ -45,36 +48,44 @@ window.menu = '${title}';
 
 <body>
 
-	<!-- Navigation -->
-	<%@include file="./shared/navbar.jsp"%>
+	<!--  <div class="wrapper"> -->
 
-	<!-- Page Content -->
-	<!--loading the home content -->
-	<c:if test="${userClickHome == true }">
-		<%@include file="home.jsp"%>
-	</c:if>
-	
-	<!-- only when user clicks about -->
-	<c:if test="${userClickAbout == true }">
-		<%@include file="about.jsp"%>
-	</c:if>
-	
-	<!-- only when user clicks about -->
-	<c:if test="${userClickContact == true }">
-		<%@include file="contact.jsp"%>
-	</c:if>
+		<!-- Navigation -->
+		<%@include file="./shared/navbar.jsp"%>
 
+		<!-- Page Content -->
 
-	<!-- footer section -->
-	<%@include file="./shared/footer.jsp"%>
-	<!-- jQuery -->
-	<script src="${js}/jquery.js"></script>
+		<!-- <div class="content" > -->
 
-	<!-- Bootstrap Core JavaScript -->
-	<script src="${js}/bootstrap.min.js"></script>
-	
-	<!-- self coded javascript -->
-    <script src="${js}/netfloristjs"></script>
+			<!--loading the home content -->
+			<c:if test="${userClickHome == true }">
+				<%@include file="home.jsp"%>
+			</c:if>
+
+			<!-- only when user clicks about -->
+			<c:if test="${userClickAbout == true }">
+				<%@include file="about.jsp"%>
+			</c:if>
+
+			<!-- only when user clicks about -->
+			<c:if test="${userClickContact == true }">
+				<%@include file="contact.jsp"%>
+			</c:if>
+
+		<!-- </div> -->
+
+		<!-- footer section -->
+		<%@include file="./shared/footer.jsp"%>
+		<!-- jQuery -->
+		<script src="${js}/jquery.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="${js}/bootstrap.min.js"></script>
+
+		<!-- self coded javascript -->
+		<script src="${js}/netflorist.js"></script>
+<!--	</div> -->
+
 </body>
 
 </html>
